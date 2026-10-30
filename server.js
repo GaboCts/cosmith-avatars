@@ -10,6 +10,7 @@ import { providerRouter } from './routes/providers.js'
 process.loadEnvFile()
 
 const PORT = process.env.PORT || 3000
+const BASE_URL = process.env.BASE_URL || "http://127.0.0.1"
 const app = express()
 
 const __filename = fileURLToPath(import.meta.url)
@@ -34,7 +35,7 @@ app.use("/avatar", avatarRouter)
 app.use(formatRouter)
 
 app.listen(PORT, '127.0.0.1', () => {
-    console.log(`Active avatar server in https://cosmitavatars.space:${PORT}`)
+    console.log(`Active avatar server in ${ BASE_URL }:${ PORT }`)
 })
 
 export default app
