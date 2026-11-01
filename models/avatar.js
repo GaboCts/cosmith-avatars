@@ -9,6 +9,7 @@ import { getStackOverflowAvatar } from '../providers/stackoverflow/stackoverflow
 import { getTwitchAvatar } from '../providers/twitch/twitch.js'
 import { getVimeoAvatar } from '../providers/vimeo/vimeo.js'
 import { getXboxAvatar } from '../providers/xbox/xbox.js'
+import { getYouTubeAvatar } from '../providers/youtube/youtube.js'
 import { downloadAndResize, generateErrorImage } from '../utils/image.js'
 import { Providers } from '../utils/providers.js'
 
@@ -50,6 +51,9 @@ export class avatarModel {
                 break
             case 'xbox':
                 response = await getXboxAvatar(input)
+                break
+            case 'youtube':
+                response = await getYouTubeAvatar(input)
                 break
             default:
                 return {

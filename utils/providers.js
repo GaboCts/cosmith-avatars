@@ -43,11 +43,6 @@ export const Providers  = {
             input_type: 'username',
             provider_site: 'mastodon.social'
         },
-        // reddit: {
-        //     provider: 'Reddit',
-        //     logo_url: `${PROVIDERS_BASE_URL}/reddit.svg`,
-        //     input_type: 'username'
-        // },
         stackoverflow: {
             provider: 'Stack Overflow',
             logo_url: `${PROVIDERS_BASE_URL}/stackoverflow.svg`,
@@ -71,6 +66,12 @@ export const Providers  = {
             logo_url: `${PROVIDERS_BASE_URL}/xbox.svg`,
             input_type: 'gamertag',
             provider_site: 'xbox.com'
+        },
+        youtube: {
+            provider: 'YouTube',
+            logo_url: `${PROVIDERS_BASE_URL}/youtube.svg`,
+            input_type: 'channel (@)',
+            provider_site: 'youtube.com'
         }
     }
 }
