@@ -3,8 +3,9 @@
 .env.*
 !.env.example
 
-# Twitch token cache
+# Token cache
 providers/twitch/.twitch-token-cache.json
+providers/kick/.kick-token-cache.json
 
 # x provider
 providers/x/

@@ -31,6 +31,12 @@ export const Providers  = {
             input_type: 'email',
             provider_site: 'gravatar.com'
         },
+        kick: {
+            provider: 'Kick',
+            logo_url: `${PROVIDERS_BASE_URL}/kick.svg`,
+            input_type: 'channel',
+            provider_site: 'kick.com'
+        },
         mastodon: {
             provider: 'Mastodon',
             logo_url: `${PROVIDERS_BASE_URL}/mastodon.svg`,

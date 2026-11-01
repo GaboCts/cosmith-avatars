@@ -3,8 +3,8 @@ import { getDockerHubAvatar } from '../providers/dockerhub/dockerhub.js'
 import { getGitHubAvatar } from '../providers/github/github.js'
 import { getGitLabAvatar } from '../providers/gitlab/gitlab.js'
 import { getGravatar } from '../providers/gravatar/gravatar.js'
+import { getKickAvatar } from '../providers/kick/kick.js'
 import { getMastodonAvatar } from '../providers/mastodon/mastodon.js'
-import { getRedditAvatar } from '../providers/reddit/reddit.js'
 import { getStackOverflowAvatar } from '../providers/stackoverflow/stackoverflow.js'
 import { getTwitchAvatar } from '../providers/twitch/twitch.js'
 import { getVimeoAvatar } from '../providers/vimeo/vimeo.js'
@@ -33,12 +33,12 @@ export class avatarModel {
             case 'gravatar':
                 response = await getGravatar(input)
                 break
+            case 'kick':
+                response = await getKickAvatar(input)
+                break
             case 'mastodon':
                 response = await getMastodonAvatar(input)
                 break
-            // case 'reddit':
-            //     response = await getRedditAvatar(input)
-            //     break
             case 'stackoverflow':
                 response = await getStackOverflowAvatar(input)
                 break
